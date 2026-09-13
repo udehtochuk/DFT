@@ -1,0 +1,34 @@
+check,measured,tolerance,passed,note
+direct DFT vs FFT (max abs diff),1.9118064725833382e-12,1e-09,True,
+direct DFT vs FFT (max rel diff),1.5217512503770575e-15,1e-12,True,
+IDFT(DFT(x)) round-trip,1.699047941481644e-12,1e-09,True,
+Hermitian symmetry violation,1.812998210424515e-12,1e-09,True,
+Nyquist bin imaginary part,6.547894461980108e-13,1e-09,True,N even => X[N/2] real
+DC bin imaginary part,0.0,1e-09,True,
+legacy transform == mirrored unitary DFT,1.8129982104245152e-12,1e-09,True,confirms the 2013/14 spectrum is frequency-reversed
+|legacy| == |unitary| (magnitudes unaffected),0.0,1e-09,True,
+"Parseval discrepancy, float64",2.7492105756744553e-16,1e-12,True,
+eta_DC measured vs r^2/(1+r^2),3.3306690738754696e-16,1e-12,True,
+DCT-II Parseval,1.3746052878372277e-16,1e-12,True,
+DCT-II round-trip,9.094947017729282e-13,1e-09,True,
+11-coefficient reconstruction is real,7.016609515630989e-13,1e-09,True,
+full-mask reconstruction == x,1.6768808563938364e-12,1e-09,True,
+historical: E (sample domain),0.0001180637544273908,0.001,True,
+historical: H (transform domain),0.00011806375442766568,0.001,True,
+"historical: E1 (k=5, 11 coefficients)",0.0001064137113069938,0.001,True,
+historical: 100*E1/E,2.9318718461611544e-06,0.001,True,
+historical: E2 (all coefficients),0.00011806375442725335,0.001,True,
+historical: 100*E2/E,1.4210854715202004e-16,0.001,True,
+historical: 0.95E,6.836544437538844e-05,0.001,True,
+"historical: yc[k], ys[k] for k = 0..14 (max abs deviation)",0.3199616952069846,0.5,True,yc[0] deviates by 0.320 because it is printed to 4 s.f.
+historical: printed samples x[0..14] (max abs deviation),0.0,0.5,True,
+identity: eps_L2 == sqrt(1 - eta),2.5070347851774846e-15,1e-12,True,
+identity: 1-eta_total == (1-eta_AC)(1-eta_DC),3.3306690738754696e-16,1e-12,True,
+identity: eps_full == eps_AC / sqrt(1+r^2),8.326672684688674e-17,1e-12,True,
+magnitude ranking attains the true optimum at every budget,2.220446049250313e-16,1e-12,True,exhaustive over 16384 conjugate-symmetric sets
+window sidelobe vs literature: rectangular,0.04565630438497159,1.5,True,"measured -13.3 dB, literature -13.3 dB"
+window sidelobe vs literature: hann,0.03258817835459382,1.5,True,"measured -31.5 dB, literature -31.5 dB"
+window sidelobe vs literature: hamming,0.7492814513262829,1.5,True,"measured -42.4 dB, literature -41.7 dB"
+window sidelobe vs literature: blackman,0.010148414553476925,1.5,True,"measured -58.1 dB, literature -58.1 dB"
+cumulative-energy mask reaches its threshold,0.0,1e-12,True,
+cumulative mask is conjugate-symmetric,4.733990977001667e-13,1e-09,True,

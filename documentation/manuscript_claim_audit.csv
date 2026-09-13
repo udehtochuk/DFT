@@ -1,0 +1,34 @@
+manuscript_claim,evidence,source_or_experiment,status
+Every numerical result of the 2013/2014 study reproduces,9/9 quantities verified; max rel. diff 1.2e-4 at printed precision,validation.historical_verification_table; Table 2,Experimentally verified
+The source data are recoverable from the published coefficients,Exact match to the 15 printed samples after rounding; Hermitian and Nyquist consistency; integrality within 0.064,data_recovery.recovery_report; Notebook 01,Experimentally verified
+The recovery residual is explained by DC rounding,Mean residual -0.0627394 vs -0.0627497 predicted; unexplained difference < 1e-5; spread 1.17e-03,recovery_report; Notebook 01,Experimentally verified
+The 2013/14 computed spectrum is the frequency-reversed conjugate DFT,legacy[k] == X[(N-k) mod N] to 1.8e-12; magnitudes identical,Validation gate; test_legacy_convention_is_frequency_reversed,Experimentally verified
+"x1[n]=(-1)^n x[n] is modulation, not an inverse",Coefficient table equals its own table rolled by N/2 = 13,Supplementary D6; Notebook 01,"Mathematical, verified numerically"
+eta_DC = r^2/(1+r^2),Derivation D2; measured vs predicted agree to 3.3e-16 on S0 and 1.9e-16 across the sweep,Supplementary D2; Table 5,"Mathematical, verified numerically"
+DC carries 93.183% of the baseline energy,eta_DC = 0.9318337,metrics.dc_energy_share; Table 4,Experimentally verified
+eps_L2 = sqrt(1-eta) for any orthonormal transform,"Derivation D3; 324 retention measurements, max deviation 1.0e-14",Supplementary D3; Table 7; Fig. 3,"Mathematical, verified numerically"
+Reporting energy and error on the same basis is redundant,Direct consequence of the identity: one is a monotone transformation of the other,Supplementary D3; Sec. VIII-E,Interpretation of a mathematical result
+1-eta_total = (1-eta_AC)(1-eta_DC),Derivation D4; max deviation 2.2e-16 across corpus and sweep,Supplementary D4; validation gate,"Mathematical, verified numerically"
+eps_full = eps_AC / sqrt(1+r^2),Derivation D5; max deviation 1.1e-16; factor = 3.8301 for S0,Supplementary D5; validation gate,"Mathematical, verified numerically"
+r is a sufficient statistic for converting between bases,Direct consequence of D4,Supplementary D4; Sec. XII,Interpretation of a mathematical result
+At the historical operating point eps_L2 = 0.0908,"eps_L2 = 0.090846, RMSE = 23.187, SNR = 20.83 dB",Table 2; Fig. 1,Experimentally verified
+Total retention rises with offset while fidelity is unchanged,eta_total 69.0% -> 99.88%; eps_L2(AC) constant to 9.1e-17,Experiment A; Table 5; Fig. 2,"Experimentally verified, causal design"
+The 95% question answers 3 or 17 depending on basis,total basis 3 coeff (eps 0.1878); AC basis 17 coeff (eps 0.1997),Table 3; Table 6,Experimentally verified
+Magnitude selection never retains less than low-pass at equal count,Verified as an invariant at every matched coefficient count,test_magnitude_selection_is_at_least_as_efficient_as_lowpass,"Mathematical by construction, verified"
+H4 only partly supported: the margin is modest,90% AC: 12 vs 12 coeff; 95% AC: 17 vs 20,Table 3; Notebook 03,Experimentally verified
+DCT compacts better than DFT for correlated/transient sources,Established 1974; this study rediscovers nothing,"References [3], [4]","Literature-supported, explicitly not a contribution"
+DCT vs DFT direction matches literature; magnitude is signal-dependent,99% threshold: S5 10 vs 24; S2 5 vs 22; S1 DFT wins 2 vs 5,Table 8; Fig. 6,Experimentally verified
+The confound is transform-independent,The offset dominates the first coefficient of DFT and DCT alike,Notebook 05,Experimentally verified
+Bin-centered tones do not leak; half-bin offset leaks 54.9%,leakage fraction 0.0e+00 vs 0.5492,Table 9; Fig. 7,Experimentally verified
+Window sidelobes match the published catalog,"-13.2, -31.5, -41.4, -58.2 dB vs -13.3, -31.5, -41.7, -58.1",Validation gate; Table 9,Literature-supported and verified
+Windowing helps leakage but not the DC confound,eps_L2 0.431 -> 0.143 on the leaky tone; a window cannot remove a mean,Table 9; Sec. VIII-H,Experimentally verified plus mathematical
+Blackman underperforms Hamming at N=26 despite lower sidelobes,eps_L2 0.317 vs 0.143; wider main lobe costs more at short N,Table 9,Experimentally verified
+The confound persists and worsens under noise,at 0 dB SNR eta_total = 95.8% while eps_L2(fluctuation) = 71.5%,Table 10; Fig. 9,"Experimentally verified, n=100 per level"
+Parseval 'verification' has no empirical content,E = H is algebraic under a unitary transform; no input can falsify it,Supplementary D7,Mathematical
+Modeling error dominates numerical error,0.0908 vs 1.76e-08 float32 and 1.37e-16 float64,Table 11; Fig. 10,Experimentally verified
+Direct DFT and FFT agree,"max abs 1.91e-12, max rel 1.52e-15",Validation gate; Notebook 08,Experimentally verified
+Energy figures are sometimes reported on unprocessed data,ONE case documented. Frequency NOT established; no survey conducted.,Sec. III; Sec. X limitation 3,NOT EVIDENCED - flagged as a limitation and as future work
+The reporting protocol removes the ambiguity,Demonstrated by re-describing the historical result; not validated with external users,Sec. XII,Methodological recommendation
+No new transform theory is claimed,All four relations derived as Parseval corollaries,Supplementary D2-D5; Sec. X limitation 7,Explicit non-claim
+Physical identity of the baseline signal,Information required - not available in the supplied material,Sec. VI-A; Integrity statement Sec. 3,Explicitly unavailable
+The variant number K of the original task,Information required - not available in the supplied material,Integrity statement Sec. 4,Explicitly unavailable
