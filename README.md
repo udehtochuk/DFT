@@ -2,7 +2,7 @@
 
 **DC Dominance in DFT Coefficient Selection**
 
-Analysis code, recovered dataset and reproducible workflow for the manuscript of the same
+Analysis code, original data and reproducible workflow for the manuscript of the same
 name by Udeh Tochukwu L. (ORCID 0000-0003-0066-0618).
 
 Run `python code/reproduce_all.py` to regenerate every number, table and figure in the paper.
@@ -49,13 +49,16 @@ energy.
 Three provenance classes are kept strictly separate and are **never**
 overwritten by one another.
 
-### Recovered historical data
+### Original historical data
 `data/recovered_data.txt`, `data/recovered_data.csv`,
 `data/signal_corpus/S0_recovered.csv`
 
-The 26-sample sequence of the 2013/2014 study. The original `data.txt` is
-**lost**. This sequence was reconstructed by Hermitian inversion of the transform
-coefficients printed in that paper, and validated three independent ways
+The 26-sample sequence of the 2013/2014 study, read from the original Mathcad
+worksheets in `data/original_worksheets/`. The pipeline also reconstructs it
+independently by Hermitian inversion of the coefficients printed in that paper
+and asserts the two agree exactly; if the worksheets are removed it falls back
+to the reconstruction and every reported value is unchanged. The reconstruction
+was validated three independent ways
 (agreement with the 15 printed samples; internal Hermitian/Nyquist consistency of
 the printed coefficients; integrality of the recovered values).
 
