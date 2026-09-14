@@ -1,0 +1,10 @@
+quantity,historical,recomputed,units,rel_diff,status,note
+E (sample domain),1694000.0,1693800.0,-,0.0001180637544273908,verified,
+H (transform domain),1694000.0,1693799.9999999995,-,0.00011806375442766568,verified,
+"E1 (k=5, 11 coefficients)",1680000.0,1679821.2249650043,-,0.0001064137113069938,verified,
+100*E1/E,99.175,99.17470923160965,%,2.9318718461611544e-06,verified,
+E2 (all coefficients),1694000.0,1693800.0000000002,-,0.00011806375442725335,verified,
+100*E2/E,100.0,100.00000000000001,%,1.4210854715202004e-16,verified,
+0.95E,1609000.0,1609110.0,-,6.836544437538844e-05,verified,
+"yc[k], ys[k] for k = 0..14 (max abs deviation)",0.0,0.3199616952069846,-,0.3199616952069846,verified,yc[0] deviates by 0.320 because it is printed to 4 s.f.
+printed samples x[0..14] (max abs deviation),0.0,0.0,-,0.0,verified,

@@ -1,0 +1,40 @@
+**Table 8. DFT vs DCT-II coefficient counts at fixed thresholds.**
+
+| id   | transform   |   threshold |   n_coeff |      eps_l2 | mean_removed   |
+|:-----|:------------|------------:|----------:|------------:|:---------------|
+| S0   | DCT-II      |        0.9  |        10 | 0.299484    | True           |
+| S0   | DFT         |        0.9  |        12 | 0.297634    | True           |
+| S0   | DCT-II      |        0.95 |        14 | 0.199443    | True           |
+| S0   | DFT         |        0.95 |        17 | 0.199705    | True           |
+| S0   | DCT-II      |        0.99 |        18 | 0.0951672   | True           |
+| S0   | DFT         |        0.99 |        23 | 0.0796975   | True           |
+| S1   | DCT-II      |        0.9  |         2 | 0.253457    | True           |
+| S1   | DFT         |        0.9  |         2 | 3.00847e-15 | True           |
+| S1   | DCT-II      |        0.95 |         3 | 0.146825    | True           |
+| S1   | DFT         |        0.95 |         2 | 3.00847e-15 | True           |
+| S1   | DCT-II      |        0.99 |         5 | 0.0699666   | True           |
+| S1   | DFT         |        0.99 |         2 | 3.00847e-15 | True           |
+| S2   | DCT-II      |        0.9  |         2 | 0.291912    | True           |
+| S2   | DFT         |        0.9  |         8 | 0.305047    | True           |
+| S2   | DCT-II      |        0.95 |         3 | 0.163628    | True           |
+| S2   | DFT         |        0.95 |        14 | 0.202117    | True           |
+| S2   | DCT-II      |        0.99 |         5 | 0.0832141   | True           |
+| S2   | DFT         |        0.99 |        22 | 0.095023    | True           |
+| S3   | DCT-II      |        0.9  |         3 | 0.274561    | True           |
+| S3   | DFT         |        0.9  |         4 | 0.249136    | True           |
+| S3   | DCT-II      |        0.95 |         4 | 0.209276    | True           |
+| S3   | DFT         |        0.95 |         6 | 2.98348e-15 | True           |
+| S3   | DCT-II      |        0.99 |         9 | 0.0778313   | True           |
+| S3   | DFT         |        0.99 |         6 | 2.98348e-15 | True           |
+| S4   | DCT-II      |        0.9  |        12 | 0.310769    | True           |
+| S4   | DFT         |        0.9  |        18 | 0.267445    | True           |
+| S4   | DCT-II      |        0.95 |        15 | 0.211626    | True           |
+| S4   | DFT         |        0.95 |        20 | 0.205312    | True           |
+| S4   | DCT-II      |        0.99 |        20 | 0.0892631   | True           |
+| S4   | DFT         |        0.99 |        23 | 0.0518493   | True           |
+| S5   | DCT-II      |        0.9  |         7 | 0.302563    | True           |
+| S5   | DFT         |        0.9  |        16 | 0.29582     | True           |
+| S5   | DCT-II      |        0.95 |         9 | 0.16491     | True           |
+| S5   | DFT         |        0.95 |        20 | 0.206343    | True           |
+| S5   | DCT-II      |        0.99 |        10 | 0.0747719   | True           |
+| S5   | DFT         |        0.99 |        24 | 0.090032    | True           |

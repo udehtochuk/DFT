@@ -1,0 +1,24 @@
+**Table 1. Recovered dataset summary and recovery validation evidence.**
+
+| field                           | value                                                                                                                              |
+|:--------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
+| n_samples                       | 26                                                                                                                                 |
+| max_imag_part                   | 9.841016890277388e-13                                                                                                              |
+| residual_vs_printed_min         | -0.06346982522626377                                                                                                               |
+| residual_vs_printed_max         | -0.06229787027868383                                                                                                               |
+| residual_spread_ptp             | 0.001171954947579934                                                                                                               |
+| residual_mean_offset            | -0.06273943395144102                                                                                                               |
+| dc_rounding_predicted_offset    | -0.06274965105625545                                                                                                               |
+| max_abs_residual_after_rounding | 0.0                                                                                                                                |
+| max_distance_to_integer         | 0.06346982522626377                                                                                                                |
+| printed_k14_equals_conj_k12     | True                                                                                                                               |
+| printed_nyquist_imag            | 2.154e-12                                                                                                                          |
+| dc_printed                      | 1256.0                                                                                                                             |
+| dc_implied                      | 1256.319961695207                                                                                                                  |
+| sequence                        | [251, 214, 195, 175, 174, 173, 198, 295, 403, 388, 318, 288, 232, 203, 215, 303, 212, 228, 135, 165, 227, 286, 316, 296, 216, 300] |
+| mean                            | 246.3846153846154                                                                                                                  |
+| std_population                  | 66.63914126044088                                                                                                                  |
+| r_mean_over_std                 | 3.6972957742910944                                                                                                                 |
+| minimum                         | 135.0                                                                                                                              |
+| maximum                         | 403.0                                                                                                                              |
+| sum                             | 6406                                                                                                                               |
