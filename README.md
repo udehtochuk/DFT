@@ -266,7 +266,7 @@ the source of the baseline sequence:
 Code and data released under the MIT License (see `LICENSE`).
 
 - Repository: `https://github.com/udehtochuk/DFT`
-- Author contact: `[EMAIL TO BE INSERTED]`
+- Author contact: `udehtochukwu66Qgmail.com`
 
 See `documentation/research_integrity_statement.md` for prior-work disclosure,
 conflict of interest, and matters requiring verification.
