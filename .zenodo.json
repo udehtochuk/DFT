@@ -1,0 +1,30 @@
+{
+  "upload_type": "software",
+  "title": "Total-energy retention and DC dominance in DFT coefficient selection: analysis code and data",
+  "version": "1.0.0",
+  "language": "eng",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Udeh, Tochukwu L.",
+      "affiliation": "Carinthia University of Applied Sciences, Villach, Austria",
+      "orcid": "0000-0003-0066-0618"
+    }
+  ],
+  "description": "<p>Analysis code, recovered historical dataset, synthetic signal corpus, validation gates and figure/table generation accompanying the manuscript <em>Total-Energy Retention Can Mask Fluctuation Reconstruction Error: DC Dominance in DFT Coefficient Selection</em>.</p><p>A single command, <code>python code/reproduce_all.py</code>, regenerates every number, table and figure reported in the article in about ten seconds. The release contains thirteen source modules, 49 tests, 33 numerical validation gates that abort the build on failure, the recovered 26-sample dataset, the generated signal corpus, all tables in CSV and Markdown, all figures in PDF, SVG and 600 dpi PNG, pinned environment specifications and SHA-256 checksums for every file.</p><p>Provenance classes are kept separate and labelled: recovered historical data (reconstructed from coefficients published in a 2014 report; the original file is lost and the physical identity of the signal is unknown), synthetic deterministic data, and stochastic data generated under a documented master seed. Figure output is byte-reproducible across runs.</p>",
+  "keywords": [
+    "discrete Fourier transform",
+    "energy compaction",
+    "coefficient selection",
+    "signal reconstruction",
+    "spectral analysis",
+    "reproducible research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/udehtochuk/DFT",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
